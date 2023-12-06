@@ -1,0 +1,216 @@
+@media all and (max-width: 768px) {
+  .container{
+    width:80%;
+  }
+ 
+  nav ul {
+    background-color: #333;
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 999;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s;
+  }
+ 
+  nav ul li {
+    float: none;
+    padding: 15px;
+  }
+  nav .icon span {
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    transition: all 0.7s;
+  }
+  nav .icon:hover + ul {
+    opacity: 1;
+    visibility: visible;
+  }
+  nav .icon span:nth-child(1) {
+    top: 0;
+  }
+  nav .icon span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  nav .icon span:nth-child(3) {
+    bottom: 0;
+  }
+  nav .icon {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 9s;
+  }
+  nav .icon:hover span:nth-child(1) {
+    transform: translateY(-50%) rotate(45deg);
+    top: 50%;
+  }
+  nav .icon:hover span:nth-child(2) {
+    opacity: 0;
+  }
+  nav .icon:hover span:nth-child(3) {
+    transform: translateY(-50%) rotate(-45deg);
+
+    top: 50%;
+  }
+  /*------------------------ end of nav ------------------*/
+  
+  /*------------------------ start HOME ----------------*/
+  
+  .home .layout h1{
+    /* background-color: aquamarine; */
+    font-size:38px;
+  }
+  .home .layout h2{
+    font-size: 18px;
+  }
+  /*------------------------ start about ----------------*/
+ 
+  .about .container .about-img .img {
+    top: 0;
+    left: 0;
+  }
+  .about .container .about-text {
+    padding-top: 50px;
+    padding-left: 0;
+  }
+  .about .container .about-text ul li {
+    width: 100%;
+  }
+ 
+  .about .container .about-img,
+  .about .container .about-text {
+    width: 100%;
+    /* float: none; */
+  }
+  .about .container .about-img .border {
+    border: none;
+    position: static;
+  }
+
+  /*------------------------end of about----------------*/
+  /*------------------------START SERVICES----------------*/
+  .services .serve-item{
+    width: 100%;
+  }
+  /*------------------------START  PORTOFOLIO----------------*/
+  .portfolio .products .prod-container{
+    width: 100%;
+  }
+  .portfolio ul{
+    width: 90%;
+  }
+  /*------------------------START FACT-AREA----------------*/
+.facts-area .item{
+width: 100%;
+padding: 30px;
+}
+  /*------------------------START CLINT-FEEDBACK----------------*/
+.client-feedback .item{
+    width: 60%;
+    padding-right: 0;
+}
+.client-feedback .item h3{
+    padding-top: 20px;
+}
+.client-feedback .item .item-img,.client-feedback .item .item-content{
+    width: 100%;
+}
+ /*------------------------START BLOG----------------*/
+    .blog .blog-item{ 
+        width: 100%;
+    }
+ /*------------------------START Contact----------------*/
+     .contact-us .input-items{ 
+        width: 100%;
+    }
+    .contact-us .input-items .input-item{
+        width: 100%;
+    }
+    footer   p,footer i{
+       font-size: 14px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1100px) {
+  .container {
+    width: 90%;
+  }
+  /*------------------------------------ home------------------ */
+
+  .home .layout h1{
+    font-size:50px;
+  }
+  .home .layout h2{
+    font-size: 26px;
+  }
+  /*------------------------------------ about------------------ */
+  .about .about-img .border {
+    border: none;
+  }
+ 
+  .about .about-img img {
+    width: 100%;
+  }
+  .about .container .about-text p,  .about .container .about-text li, .about .container .about-text span,.about .container .about-text a{
+    font-size: 14px;
+  }
+  .about .container .about-text{
+  
+    padding-left: 0;
+    width: 60%;
+  }
+  .about .container .about-img{
+    /* width:; */
+    /* padding-right:10px; */
+  }
+  .about .about-text ul li {
+    padding: 5px 0px;
+    width: 50%;
+  }
+/*--------------------------------------- START Services------------*/
+.services .serve-item{
+    width: 50%;
+}
+/*--------------------------------------START PORTFOLIO------------*/
+.portfolio .products .prod-container{
+    width: 50%;
+  }
+  .portfolio ul{
+    width: 60%;
+  }
+    /*------------------------START FACT-AREA----------------*/
+.facts-area .item{
+    width: 50%;
+    padding: 20px;
+    }
+    /*------------------------START CLINT-FEEDBACK----------------*/
+    .client-feedback .item{
+        width: 90%;
+    }
+    .client-feedback .item .item-img{
+          width: 20%
+    }
+    .client-feedback .item .item-content{
+        /* padding-left: 10px; */
+        /* padding-right: 15px; */
+        width: 60%;
+
+    }
+    /*------------------------START BLOG----------------*/
+    .blog .blog-item{ 
+        width: 50%;
+    }
+
+}
