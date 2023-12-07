@@ -213,4 +213,9 @@ padding: 30px;
         width: 50%;
     }
 
+    .layer-icons i{
+        padding: 0px 4px;
+        font-size: 14px;
+    }
+
 }
